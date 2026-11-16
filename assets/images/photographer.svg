@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="photoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181b24"/>
+      <stop offset="50%" stop-color="#0f1117"/>
+      <stop offset="100%" stop-color="#08090c"/>
+    </linearGradient>
+    <radialGradient id="rimLight" cx="70%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#e5c158" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#e5c158" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8e59b"/>
+      <stop offset="100%" stop-color="#d4af37"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="750" fill="url(#photoBg)"/>
+  <rect width="600" height="750" fill="url(#rimLight)"/>
+  
+  <!-- Silhouette and Camera composition -->
+  <g opacity="0.85">
+    <!-- Body silhouette -->
+    <path d="M 120 750 C 120 620 180 520 250 490 L 350 490 C 420 520 480 620 480 750 Z" fill="#13151d"/>
+    <!-- Head / Neck -->
+    <path d="M 260 490 L 260 430 L 340 430 L 340 490 Z" fill="#191c26"/>
+    <ellipse cx="300" cy="350" rx="90" ry="110" fill="#1a1e2a"/>
+    <!-- Hair contour -->
+    <path d="M 210 330 C 210 230 260 210 300 210 C 350 210 395 240 395 330 C 370 280 340 260 300 260 C 250 260 230 290 210 330 Z" fill="#0d0e14"/>
+    
+    <!-- Camera in hands -->
+    <g transform="translate(300, 480)">
+      <rect x="-85" y="-55" width="170" height="110" rx="14" fill="#0b0c10" stroke="#373d4d" stroke-width="3"/>
+      <!-- Lens -->
+      <circle cx="15" cy="0" r="42" fill="#151821" stroke="url(#goldGrad)" stroke-width="4"/>
+      <circle cx="15" cy="0" r="28" fill="#090a0f" stroke="#373d4d" stroke-width="2"/>
+      <circle cx="22" cy="-6" r="10" fill="#e5c158" opacity="0.4"/>
+      <!-- Flash/Viewfinder -->
+      <rect x="-65" y="-72" width="45" height="18" rx="4" fill="#1f232e" stroke="#373d4d" stroke-width="2"/>
+      <circle cx="-42" cy="-40" r="7" fill="#e5c158"/>
+    </g>
+  </g>
+  
+  <!-- Editorial frame & metadata -->
+  <rect x="25" y="25" width="550" height="700" fill="none" stroke="#252936" stroke-width="1.5" rx="10"/>
+  <text x="50" y="690" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="600" fill="#e5c158" letter-spacing="3">FRAME STUDIO</text>
+  <text x="550" y="690" text-anchor="end" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="400" fill="#717684" letter-spacing="2">EST. 2018</text>
+</svg>
